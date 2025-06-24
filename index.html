@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>CVE InsightX Owner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Marktech WebPage Tracker</title>
 
-  <!-- ✅ Google Tag Manager -->
+  <!-- Google Tag Manager -->
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5383LGRR');
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TF9G4TFN');
   </script>
-  <!-- End GTM -->
+  <!-- End Google Tag Manager -->
 
   <style>
     body {
@@ -24,34 +24,39 @@
       padding: 40px;
       text-align: center;
     }
+    h1 {
+      font-size: 2rem;
+    }
     button {
-      padding: 12px 20px;
+      padding: 10px 20px;
+      margin-top: 30px;
       font-size: 16px;
-      margin-top: 20px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ GTM NoScript fallback -->
+  <!-- Google Tag Manager (noscript) -->
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5383LGRR"
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF9G4TFN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <h1>My Marktech WebPage Tracker</h1>
-  <p>This page is connected with GTM and GA4 for tracking.</p>
+  <h1>CVE InsightX Owner</h1>
+  <p>This page is GTM-ready and will report to GA4.</p>
 
-  <button onclick="trackUpload()">Track Upload Event</button>
+  <button onclick="trackUpload()">Track File Upload</button>
 
   <script>
     function trackUpload() {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'file_upload',
-        file_name: 'test_upload.xlsx'
+        file_name: 'demo_data.xlsx'
       });
-      alert('Custom event sent to GA4 via GTM!');
+      alert("Custom event 'file_upload' sent to GTM/GA4!");
     }
   </script>
 
